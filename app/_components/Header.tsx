@@ -1,7 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Section } from "./Section";
 import { GithubIcon } from "./icons/GithubIcon";
-import { TwitterIcon } from "./icons/TwitterIcon";
+import { LinkedInIcon } from "./icons/LinkedInIcon";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -32,9 +32,9 @@ export const Header = () => {
                         href="https://www.linkedin.com/in/broux/"
                         target="_blank"
                     >
-                        <TwitterIcon size={12} className="text-foreground" />
+                        <LinkedInIcon size={12} className="text-foreground" />
                     </Link>
-                    <Link
+                    {/* <Link
                         className={cn(
                             buttonVariants({ variant: "outline" }),
                             "size-6 p-0"
@@ -43,7 +43,7 @@ export const Header = () => {
                         target="_blank"
                     >
                         <GithubIcon size={12} className="text-foreground" />
-                    </Link>
+                    </Link> */}
                 </ul>
             </Section>
         </header>

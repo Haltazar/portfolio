@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="h-full">
       <body
-        className={cn(geistSans.variable, geistMono.variable, AnekTelugu, "font-sans h-full bg-background text-foreground")}
+        className={cn(geistSans.variable, geistMono.variable, AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}
       >
         {children}
       </body>
