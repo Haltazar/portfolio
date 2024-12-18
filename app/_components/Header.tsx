@@ -4,14 +4,14 @@ import { GithubIcon } from "./icons/GithubIcon";
 import { LinkedInIcon } from "./icons/LinkedInIcon";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import LogoBR from "./imgs/logoNoBg.png";
+import Image from "next/image";
 
 export const Header = () => {
     return (
         <header className="sticky top-0 py-4">
-            <Section className="flex items-baseline">
-                <h1 className="text-4xl font-bold text-primary">
-                    Benjamin Roux
-                </h1>
+            <Section className="flex items-center">
+                <Image src={LogoBR} alt="Logo" width={0} height={0} className="w-16 md:w-20 lg:w-24 h-16 md:h-20 lg:h-24 rounded-lg" />
                 <div className="flex-1" />
                 <ul className="flex items-center gap-2">
                     <Link

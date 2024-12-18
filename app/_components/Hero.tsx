@@ -24,13 +24,13 @@ export const Hero = () => {
                     Développeur web full stack
                 </h3>
                 <p className="text-base">
+                    <Link href="https://www.roulemarcel.fr/" target="_blank">
+                        <Code>RouleMarcel</Code>.
+                    </Link>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Illo iure architecto distinctio animi, illum numquam eius
                     amet, autem quibusdam debitis et eligendi temporibus
                     dignissimos perspiciatis eos ad corrupti beatae
-                    <Link href="https://www.roulemarcel.fr/" target="_blank">
-                        <Code>RouleMarcel</Code>.
-                    </Link>
                     <Link
                         href="https://www.mydigitalschool.com/ecole-multimedia-angers"
                         target="_blank"

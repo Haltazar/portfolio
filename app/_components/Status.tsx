@@ -1,73 +1,50 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
-import { Home, LucideIcon } from "lucide-react";
-import Link from "next/link";
+import { Project, PROJECTS } from "./cards/ProjectCard";
+import { Work, WORKS } from "./cards/WorkCard";
+import { Contact, CONTACTS } from "./cards/ContactCard";
 
 export const Status = () => {
     return (
-        <Section className="flex max-md:flex-col items-start gap-4">
+        <Section className="flex max-lg:flex-col items-start gap-4">
             <div className="flex-[3] w-full">
                 <Card className="w-full p-4 flex flex-col gap-2">
-                    <p className="text-lg text-muted-foreground">
-                        Side fun project
-                    </p>
+                    <p className="text-lg text-muted-foreground">Mes projets</p>
                     <div className="flex flex-col gap-4">
-                        {SIDE_PROJECTS.map((project, index) => (
-                            <SideProject 
-                            key={index}
-                            Logo={project.Logo}
-                            title={project.title}
-                            description={project.description}
-                            url={project.url}
-                            />
+                        {PROJECTS.map((project, index) => (
+                            <Project key={index} {...project} />
                         ))}
                     </div>
                 </Card>
             </div>
-            <div className="flex-[2] h-full w-full flex flex-col gap-4">
-                <Card className="p-4 flex-1">Work</Card>
-                <Card className="p-4 flex-1">Contact Me</Card>
+            <div className="flex-[2] h-full w-full flex flex-col gap-2">
+                <Card className="p-4 flex-1 flex flex-col gap-2">
+                    <p className="text-lg text-muted-foreground">
+                        Mes expériences
+                    </p>
+                    <div className="flex flex-col gap-4">
+                        {WORKS.map((work, index) => (
+                            <Work key={index} {...work} />
+                        ))}
+                    </div>
+                </Card>
+                <Card className="p-4 flex-1 flex flex-col gap-2">
+                    <p className="text-lg text-muted-foreground">
+                        Me contacter
+                    </p>
+                    <div className="flex flex-col gap-4">
+                        {CONTACTS.map((contact, index) => (
+                            <Contact key={index} {...contact} />
+                        ))}
+                    </div>
+                </Card>
             </div>
         </Section>
     );
 };
 
-const SIDE_PROJECTS = [
-    {
-        Logo: Home,
-        title: "Home",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.roulemarcel.fr/",
-    },
-    {
-        Logo: Home,
-        title: "Home",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.mydigitalschool.com/ecole-multimedia-angers",
-    },
-];
 
-type SideProjectProps = {
-    Logo: LucideIcon;
-    title: string;
-    description: string;
-    url: string;
-};
 
-const SideProject = (props: SideProjectProps) => {
-    return (
-        <div>
-            <Link href={props.url} target="_blank" className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-                <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-                    <props.Logo />
-                </span>
-                <div>
-                    <p className="text-lg font-semibold">{props.title}</p>
-                    <p className="text-lg text-muted-foreground">
-                        {props.description}
-                    </p>
-                </div>
-            </Link>
-        </div>
-    );
-};
+
+
+
