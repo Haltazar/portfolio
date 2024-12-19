@@ -11,32 +11,34 @@ export const PROJECTS: ProjectProps[] = [
     {
         img: ClotairLogo,
         title: "Clotair",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.mydigitalschool.com/ecole-multimedia-angers",
+        description: "Création d'un site web pour un fabricant/constructeur",
+        url: "/",
     },
     {
         img: MargotLogo,
         title: "Margot SA",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.roulemarcel.fr/",
+        description:
+            "Création d'un site web pour une entreprise de vente de pieds de lit",
+        url: "https://margotsa.fr/",
     },
     {
         img: StockGoLogo,
         title: "Stock & Go",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.mydigitalschool.com/ecole-multimedia-angers",
+        description:
+            "Création d'un SaaS pour la gestion des stocks de bornes à pizzas",
+        url: "https://bornes.roulemarcel.fr/",
     },
     {
         img: PizzaCookLogo,
         title: "Pizza Cook",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.mydigitalschool.com/ecole-multimedia-angers",
+        description: "Refonte du site web de Pizza Cook",
+        url: "https://pizzacook.fr/",
     },
     {
         img: ScaniaLogo,
         title: "TCO Calculator",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        url: "https://www.mydigitalschool.com/ecole-multimedia-angers",
+        description: "Création d'un site web pour le calcul du TCO des poids lourds",
+        url: "https://preprod.tco.roulemarcel.fr/",
     },
 ];
 

@@ -6,7 +6,7 @@ import { Contact, CONTACTS } from "./cards/ContactCard";
 
 export const Status = () => {
     return (
-        <Section className="flex max-lg:flex-col items-start gap-4">
+        <Section className="flex max-lg:flex-col gap-4 items-center">
             <div className="flex-[3] w-full">
                 <Card className="w-full p-4 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">Mes projets</p>
@@ -17,7 +17,7 @@ export const Status = () => {
                     </div>
                 </Card>
             </div>
-            <div className="flex-[2] h-full w-full flex flex-col gap-2">
+            <div className="flex-[2] h-full w-full flex flex-col gap-4">
                 <Card className="p-4 flex-1 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">
                         Mes expériences

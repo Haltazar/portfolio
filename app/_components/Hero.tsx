@@ -1,17 +1,8 @@
-import { ComponentPropsWithRef } from "react";
+import { Code } from "./Code";
 import { Section } from "./Section";
 import ProfilePicture from "./imgs/BEN6&.png";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
-
-const Code = ({className, ...props}: ComponentPropsWithRef<"span">) => {
-    return (
-        <span className={cn("bg-accent/30 font-mono border border-accent px-1 py-0.5 rounded-sm text-primary hover:bg-accent/50 transition-colors", className)} {...props}>
-            {props.children}
-        </span>
-    );
-};
 
 export const Hero = () => {
     return (
@@ -24,22 +15,30 @@ export const Hero = () => {
                     Développeur web full stack
                 </h3>
                 <p className="text-base">
-                    <Link href="https://www.roulemarcel.fr/" target="_blank">
-                        <Code>RouleMarcel</Code>.
+                    Passionné par le numérique, j’ai décidé de me reconvertir
+                    après une première carrière en tant que professeur de
+                    français langue étrangère. Cette transition m’a conduit à
+                    suivre une formation de Développeur Web et Web Mobile au{" "}
+                    <Link href="https://www.cefim.eu/" target="_blank">
+                        <Code>CEFIM</Code>
                     </Link>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Illo iure architecto distinctio animi, illum numquam eius
-                    amet, autem quibusdam debitis et eligendi temporibus
-                    dignissimos perspiciatis eos ad corrupti beatae
+                    , où j’ai acquis les bases essentielles du développement.
+                    J’ai ensuite poursuivi mon apprentissage avec un cursus en
+                    Conception et Développement d’Applications à{" "}
                     <Link
                         href="https://www.mydigitalschool.com/ecole-multimedia-angers"
                         target="_blank"
                     >
-                        <Code>MyDigitalSchool</Code>.
+                        <Code>MyDigitalSchool</Code>
                     </Link>
-                    <Link href="https://www.cefim.eu/" target="_blank">
-                        <Code>CEFIM</Code>.
-                    </Link>
+                    , qui m’a permis de perfectionner mes compétences.
+                    Aujourd’hui, je travaille chez{" "}
+                    <Link href="https://www.roulemarcel.fr/" target="_blank">
+                        <Code>Roule Marcel</Code>
+                    </Link>{" "}
+                    en tant que développeur full stack, où je mets en pratique
+                    ma passion et mes compétences au service de projets
+                    enrichissants.
                 </p>
             </div>
             <div className="flex-[2] max-md:m-auto ml-auto">
